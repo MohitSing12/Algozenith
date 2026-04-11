@@ -1,1 +1,1 @@
-My personal collection of solved question on the algozenith platform
+My personal collection of solved questions on the algozenith platform
