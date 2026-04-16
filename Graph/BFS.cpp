@@ -24,7 +24,7 @@ void bfs(vector<vector<int>> &adj,int src){
 
 vector<int> bfs_connected(vector<vector<int>> &adj){
     int V=adj.size();
-    for(int i=0;i<V;i++){
+    for(int i=1;i<V;i++){
         if(!visited[i]){
             bfs(adj,i);
         }
@@ -36,10 +36,10 @@ void solve(){
 vector<vector<int>> adj;
 int n,m;
 cin>>n>>m;
-adj.resize(n);
-res.resize(n);
+adj.resize(n+1);
+// res.resize(n+1);
 res.clear();
-visited.resize(n,false);
+visited.assign(n+1,false);
 
 for(int i=0;i<m;i++){
     int x,y;
